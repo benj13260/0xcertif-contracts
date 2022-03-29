@@ -18,11 +18,11 @@ contract Gallery is ERC721, ERC721URIStorage, Ownable {
     address private _royaltiesAddr;
 
     constructor(string memory name_, string memory symbol_
-    ,uint256 royalties_, address royaltiesAddr_
+    //,uint256 royalties_, address royaltiesAddr_
     )
         ERC721(name_, symbol_) {
-        _royalties = royalties_;
-        _royaltiesAddr = royaltiesAddr_;
+       // _royalties = royalties_;
+       // _royaltiesAddr = royaltiesAddr_;
     }
 
     event TransferHolder(
